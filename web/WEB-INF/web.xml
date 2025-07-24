@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>ShelterServlet</servlet-name>
+        <servlet-class>controller.ShelterServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ShelterServlet</servlet-name>
+        <url-pattern>/ShelterServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>BookingServlet</servlet-name>
+        <servlet-class>controller.BookingServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>BookingServlet</servlet-name>
+        <url-pattern>/BookingServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>SupplyServlet</servlet-name>
+        <servlet-class>controller.SupplyServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SupplyServlet</servlet-name>
+        <url-pattern>/SupplyServlet</url-pattern>
+    </servlet-mapping>
+    
+</web-app>
