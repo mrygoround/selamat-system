@@ -23,11 +23,11 @@
     <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
     <ul class="nav-menu">
       <% if ("admin".equals(role)) { %>
-        <li><a href="shelter.jsp">Manage Shelters</a></li>
-        <li><a href="booking.jsp">Manage Bookings</a></li>
-        <li><a href="supply.jsp">Manage Supplies</a></li>
+        <li><a href="shelter.jsp">Shelters</a></li>
+        <li><a href="booking.jsp">Bookings</a></li>
+        <li><a href="supply.jsp">Supplies</a></li>
       <% } else { %>
-        <li><a href="booking.jsp">My Bookings</a></li>
+        <li><a href="booking.jsp">Bookings</a></li>
       <% } %>
       <li><a href="logout.jsp" class="logout-button">Logout</a></li>
     </ul>
