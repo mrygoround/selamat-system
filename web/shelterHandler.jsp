@@ -4,10 +4,13 @@
 <%@page import="org.json.JSONObject" %>
 <%
     JSONArray shelterList = new JSONArray();
+    String dbPath = application.getRealPath("/database/selamat_db");
+    String dbURL = "jdbc:derby:" + dbPath + ";";
 
     try {
-        Class.forName("org.apache.derby.jdbc.ClientDriver");
-        Connection conn = DriverManager.getConnection("jdbc:derby://localhost:1527/selamat_db", "app", "app");
+        Class.forName("org.apache.derby.jdbc.EmbeddedDriver");
+        Connection conn = DriverManager.getConnection(dbURL);
+
         String sql = "SELECT * FROM SHELTER";
         PreparedStatement pst = conn.prepareStatement(sql);
         ResultSet rs = pst.executeQuery();

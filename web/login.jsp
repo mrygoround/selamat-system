@@ -8,7 +8,8 @@
 </head>
 <body>
   <div class="container" id="login-container">
-    <h2>Login</h2>
+    <h2>SELAMAT </h2>
+      <h2>Login </h2>
     <form method="post" action="loginHandler.jsp">
     <input type="text" name="username" placeholder="Username or Email" required>
     <input type="password" name="password" placeholder="Password" required>

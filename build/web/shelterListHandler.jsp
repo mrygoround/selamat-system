@@ -5,8 +5,12 @@ response.setCharacterEncoding("UTF-8");
 
 JSONArray shelterArray = new JSONArray();
 try {
-    Class.forName("org.apache.derby.jdbc.ClientDriver");
-    Connection conn = DriverManager.getConnection("jdbc:derby://localhost:1527/selamat_db", "app", "app");
+    String dbPath = application.getRealPath("/database/selamat_db");
+    String dbURL = "jdbc:derby:" + dbPath + ";create=true";
+
+    Class.forName("org.apache.derby.jdbc.EmbeddedDriver");
+    Connection conn = DriverManager.getConnection(dbURL);
+    
     Statement stmt = conn.createStatement();
     ResultSet rs = stmt.executeQuery("SELECT * FROM SHELTER");
 
@@ -20,6 +24,8 @@ try {
         shelterArray.put(obj);
     }
 
+    rs.close();
+    stmt.close();
     conn.close();
 } catch (Exception e) {
     JSONObject err = new JSONObject();

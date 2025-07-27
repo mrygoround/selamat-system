@@ -7,6 +7,7 @@
 </head>
 <body>
   <div class="container">
+    <h2>SELAMAT </h2>
     <h2>Register</h2>
     <form method="post" action="registerHandler.jsp">
       <input type="text" name="username" placeholder="Username" required>

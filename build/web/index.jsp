@@ -20,27 +20,10 @@
 
   <header>
     <h1>SELAMAT</h1>
-    <p>Platform Tempahan Shelter Kecemasan yang Selamat, Mudah & Cekap</p>
+    <p>Emergency Shelter Booking & Supply Management System</p>
   </header>
 
-  <main>
-    <section>
-      <h2>Senarai Shelter Tersedia</h2>
-      <p>Sistem ini membolehkan anda menyemak dan membuat tempahan untuk shelter kecemasan di seluruh negara. Maklumat dikemaskini secara langsung bagi memastikan anda mendapat info yang tepat dan terkini.</p>
-      <table id="shelterTable">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Nama</th>
-            <th>Lokasi</th>
-            <th>Kapasiti</th>
-            <th>Status</th>
-          </tr>
-        </thead>
-        <tbody id="tableBody"></tbody>
-      </table>
-    </section>
-  </main>
+  <main></main>
 
   <script src="js/index.js"></script>
 </body>
